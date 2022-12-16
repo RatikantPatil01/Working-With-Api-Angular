@@ -1,0 +1,24 @@
+
+<h1>Get List User API</h1>
+<div *ngIf="show">
+
+<table bgColor="black" align="center">
+ <tr bgcolor="grey">
+   <th>id</th>
+   <th>email</th>
+   <th>first_name</th>
+   <th>last_name</th>
+   <th>Images</th>
+ </tr>
+
+ <tr>
+   <tr *ngFor="let user of listuser.data" bgcolor="lightgrey" align="center">
+   <td>{{ user.id }}</td>
+   <td>{{user.email }}</td>
+   <td>{{user.first_name}}</td>
+   <td>{{user.last_name}}</td>
+   {{user.avatar}}
+ </tr>
+</table> 
+
+</div>

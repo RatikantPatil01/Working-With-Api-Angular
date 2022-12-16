@@ -1,0 +1,26 @@
+<h1>Single User API</h1>
+
+ <div *ngIf="singleUserValue"> 
+
+<table bgColor="black" align="center">
+ <tr bgcolor="grey">
+   <th>id</th>
+   <th>Email</th>
+   <th>First_name</th>
+   <th>Last_name</th>
+   <th>Images</th>
+ </tr>
+ <!-- *ngFor="let user of singleUser.data" -->
+ <tr>
+   <tr   bgcolor="lightgrey" align="center">
+   <td>{{singleUser.data.id }}</td>
+   <td>{{singleUser.data.email }}</td>
+   <td>{{singleUser.data.first_name}}</td>
+   <td>{{singleUser.data.last_name}}</td>
+   <td>{{singleUser.data.avatar}}</td>
+   
+ </tr>
+</table>
+
+ </div>
+

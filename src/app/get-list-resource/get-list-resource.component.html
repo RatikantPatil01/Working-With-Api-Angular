@@ -1,0 +1,25 @@
+<h1>List Resource API</h1>
+
+<div *ngIf="singleUserValue">
+
+<table bgColor="black" align="center">
+ <tr bgcolor="grey">
+   <th>id</th>
+   <th>name</th>
+   <th>year</th>
+   <th>color</th>
+   <th>pantone_value</th>
+ </tr>
+
+ <tr>
+   <tr *ngFor="let user of getlistResourceData.data" bgcolor="lightgrey" align="center">
+   <td>{{ user.id }}</td>
+   <td>{{user.name }}</td>
+   <td>{{user.year}}</td>
+   <td>{{user.color}}</td>
+   <td>{{user.pantone_value}}</td>
+ </tr>
+</table> 
+
+</div>
+

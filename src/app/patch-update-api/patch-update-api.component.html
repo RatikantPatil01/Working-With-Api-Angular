@@ -1,0 +1,17 @@
+<h1> Patch API</h1>
+<form #usersForm="ngForm" (ngSubmit)="getUserPatchData(usersForm.value)">
+        <input type="text" ngModel name="name" placeholder="Enter Name">
+        <br> <br>
+        <input type="text" ngModel name="job" placeholder="Enter Job">
+        <br><br>
+        <button>Update New User</button>
+        
+</form>
+<div *ngIf="show">
+        After Patch :
+        <p>Name : {{data2.name}}</p>
+        <p>Job : {{data2.job}}</p>
+
+</div>
+
+

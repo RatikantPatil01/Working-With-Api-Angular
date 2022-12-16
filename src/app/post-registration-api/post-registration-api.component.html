@@ -1,0 +1,17 @@
+
+<div *ngIf="divValue">
+        <h1>Post Registration API</h1>
+<form #usersForm="ngForm" (ngSubmit)="getPostRegistratiohApi(usersForm.value)">
+        <input type="email" ngModel name="email" placeholder="Enter email">
+        <br> <br>
+        <input type="password" ngModel name="password" placeholder="Enter Password">
+        <br><br>
+        <button>Regsiter New User</button>
+
+</form>
+</div>
+
+<div  *ngIf="divValue2">
+        <h1> Registration Successfull </h1>
+</div>
+

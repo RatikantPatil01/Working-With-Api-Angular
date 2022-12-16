@@ -1,0 +1,15 @@
+<div *ngIf="divValue">
+    <h1>Post Login API</h1>
+<form #usersForm="ngForm" (ngSubmit)="getPostLoginApi(usersForm.value)">
+    <input type="email" ngModel name="email" placeholder="Enter email">
+    <br> <br>
+    <input type="password" ngModel name="password" placeholder="Enter Password">
+    <br><br>
+    <button>Login</button>
+
+</form>
+</div>
+
+<div  *ngIf="divValue2">
+    <h1> Wel-Come User </h1>
+</div>

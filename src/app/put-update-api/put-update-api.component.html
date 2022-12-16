@@ -1,0 +1,9 @@
+<h1>Put Update API</h1>
+<form #usersForm="ngForm" (ngSubmit)="editPutData(usersForm.value)">
+        <input type="text" ngModel name="name" placeholder="Enter Name">
+        <br> <br>
+        <input type="text" ngModel name="job" placeholder="Enter Job">
+        <br><br>
+        <button>update New User</button>
+</form>
+

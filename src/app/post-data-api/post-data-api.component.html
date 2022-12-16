@@ -1,0 +1,10 @@
+<h1>Post Data API</h1>
+
+<form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+        <input type="text" ngModel name="name" placeholder="Enter Name">
+        <br> <br>
+        <input type="text" ngModel name="job" placeholder="Enter Job">
+        <br><br>
+        <button>Add New User</button>
+        
+</form>

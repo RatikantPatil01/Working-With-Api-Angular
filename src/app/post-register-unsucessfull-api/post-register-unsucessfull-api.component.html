@@ -1,0 +1,18 @@
+
+<div *ngIf="divValue">
+    <h1>Post Registration Unsucessfull API</h1>
+<form #usersForm="ngForm" (ngSubmit)="getPostRegistratiohUnsucessfullApi(usersForm.value)">
+    <input type="email" ngModel name="email" placeholder="Enter email">
+    <br> <br>
+    <input type=""  name="" placeholder="Enter Password">
+    <br><br>
+    <button>Regsiter New User</button>
+
+</form>
+</div>
+
+<div  *ngIf="divValue2">
+    <h1> Registration Unsucessfull </h1>
+</div>
+
+

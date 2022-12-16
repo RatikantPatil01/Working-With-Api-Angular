@@ -1,0 +1,28 @@
+<h1>Delete API</h1>
+
+<div *ngIf="UserValue">
+
+<table bgColor="black" align="center">
+ <tr bgcolor="grey">
+   <th>id</th>
+   <th>name</th>
+   <th>year</th>
+   <th>color</th>
+   <th>pantone_value</th>
+ </tr>
+ <!-- *ngFor="let user of getSingleResourceData.data" -->
+ <tr>
+   <tr  bgcolor="lightgrey" align="center">
+   <td>1</td>
+   <td>Ratikant</td>
+   <td>2022</td>
+   <td>#95404</td>
+   <td>xxyyzz</td>
+ </tr>
+ 
+</table> 
+<nav id="button">
+<button (click)="onDelete(1)" text-align>Delete User</button>
+</nav>
+
+</div>

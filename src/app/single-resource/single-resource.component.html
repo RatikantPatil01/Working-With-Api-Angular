@@ -1,0 +1,26 @@
+<h1>Single Resource API</h1>
+
+<div *ngIf="singleUserValue">
+
+<table bgColor="black" align="center">
+ <tr bgcolor="grey">
+   <th>id</th>
+   <th>name</th>
+   <th>year</th>
+   <th>color</th>
+   <th>pantone_value</th>
+ </tr>
+ <!-- *ngFor="let user of getSingleResourceData.data" -->
+ <tr>
+   <tr  bgcolor="lightgrey" align="center">
+   <td>{{ getSingleResourceData.data.id }}</td>
+   <td>{{getSingleResourceData.data.name }}</td>
+   <td>{{getSingleResourceData.data.year}}</td>
+   <td>{{getSingleResourceData.data.color}}</td>
+   <td>{{getSingleResourceData.data.pantone_value}}</td>
+ </tr>
+</table> 
+
+</div>
+
+
